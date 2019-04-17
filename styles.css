@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+@font-face {
+  font-family: "animex";
+  src:url("fonts/animex.eot");
+  src:url("fonts/animex.eot?#iefix") format("embedded-opentype"),
+    url("fonts/animex.woff") format("woff"),
+    url("fonts/animex.ttf") format("truetype"),
+    url("fonts/animex.svg#animex") format("svg");
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+[data-icon]:before {
+  font-family: "animex" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="dan-"]:before,
+[class*=" dan-"]:before {
+  font-family: "animex" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.dan-download:before {
+  content: "\61";
+}
+.dan-search:before {
+  content: "\63";
+}
